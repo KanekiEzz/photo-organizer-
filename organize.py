@@ -29,35 +29,29 @@ def organize_files(source_folder):
         print(f"❌ Path does not exist: {source_folder}")
         return
 
-    # Walk through all subfolders
     for root, dirs, files in os.walk(source_folder):
         for filename in files:
             file_path = os.path.join(root, filename)
 
-            # Skip if already inside a sorted folder
             if "Photo" in root or "Video" in root or "Document" in root or "Audio" in root or "Other" in root:
                 continue
 
             if not os.path.isfile(file_path):
                 continue
 
-            # Use modified time
             stat = os.stat(file_path)
             modified = datetime.fromtimestamp(stat.st_mtime)
 
             year = str(modified.year)
             month = f"{modified.month:02d}"
 
-            # Detect category
             category = get_category(filename)
 
-            # Build target directory
             target_dir = os.path.join(source_folder, category, year, month)
             os.makedirs(target_dir, mode=0o755, exist_ok=True)
 
             dest_path = os.path.join(target_dir, filename)
 
-            # Prevent overwrite
             if os.path.exists(dest_path):
                 print(f"⚠️ Already exists, skipping: {filename}")
                 continue
