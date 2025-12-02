@@ -1,0 +1,170 @@
+<svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#20232e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4e1984;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="80" fill="#ffffff" opacity="0.05"/>
+  <circle cx="1100" cy="500" r="120" fill="#ffffff" opacity="0.05"/>
+  <circle cx="200" cy="550" r="60" fill="#ffffff" opacity="0.08"/>
+  <circle cx="1000" cy="80" r="90" fill="#ffffff" opacity="0.06"/>
+  
+  <!-- Title -->
+  <text x="600" y="50" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#ffffff" filter="url(#glow)">
+    📸 Photo Organizer: Before & After
+  </text>
+  
+  <!-- Divider Line with glow -->
+  <line x1="600" y1="80" x2="600" y2="580" stroke="#ffffff" stroke-width="2" opacity="0.4" stroke-dasharray="10,5" filter="url(#glow)"/>
+  
+  <!-- BEFORE Section -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="100" width="500" height="450" rx="20" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.2)" stroke-width="2"/>
+  </g>
+  
+  <text x="300" y="145" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#ff6b6b">
+    😰 BEFORE
+  </text>
+  <text x="300" y="175" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ffd93d">
+    Complete Chaos
+  </text>
+  
+  <!-- Messy Files (Before) -->
+  <!-- Folder 1 -->
+  <g transform="translate(100, 200)" filter="url(#shadow)">
+    <rect width="120" height="100" rx="12" fill="#ffe66d" stroke="#ffb627" stroke-width="2"/>
+    <text x="60" y="35" font-size="40" text-anchor="middle">📁</text>
+    <text x="60" y="65" font-size="11" text-anchor="middle" fill="#8b5a00" font-weight="bold">random_stuff</text>
+    <text x="60" y="80" font-size="9" text-anchor="middle" fill="#8b5a00">mixed files</text>
+  </g>
+  
+  <!-- Photo scattered 1 -->
+  <g transform="translate(250, 220) rotate(-15)" filter="url(#shadow)">
+    <rect width="80" height="60" rx="8" fill="#4ecdc4" stroke="#45b7af" stroke-width="2"/>
+    <text x="40" y="40" font-size="30" text-anchor="middle">📸</text>
+  </g>
+  
+  <!-- Photo scattered 2 -->
+  <g transform="translate(370, 210) rotate(20)" filter="url(#shadow)">
+    <rect width="80" height="60" rx="8" fill="#ff6b6b" stroke="#ee5a5a" stroke-width="2"/>
+    <text x="40" y="40" font-size="30" text-anchor="middle">🎬</text>
+  </g>
+  
+  <!-- Folder 2 -->
+  <g transform="translate(140, 330)" filter="url(#shadow)">
+    <rect width="120" height="100" rx="12" fill="#ffe66d" stroke="#ffb627" stroke-width="2"/>
+    <text x="60" y="35" font-size="40" text-anchor="middle">📁</text>
+    <text x="60" y="65" font-size="11" text-anchor="middle" fill="#8b5a00" font-weight="bold">old_photos</text>
+    <text x="60" y="80" font-size="9" text-anchor="middle" fill="#8b5a00">2015-2024??</text>
+  </g>
+  
+  <!-- More scattered files -->
+  <g transform="translate(300, 350) rotate(10)" filter="url(#shadow)">
+    <rect width="80" height="60" rx="8" fill="#95e1d3" stroke="#7dcdc1" stroke-width="2"/>
+    <text x="40" y="40" font-size="30" text-anchor="middle">📄</text>
+  </g>
+  
+  <!-- Document scattered -->
+  <g transform="translate(420, 370) rotate(-25)" filter="url(#shadow)">
+    <rect width="70" height="50" rx="8" fill="#a8daff" stroke="#79c7ff" stroke-width="2"/>
+    <text x="35" y="35" font-size="25" text-anchor="middle">🎵</text>
+  </g>
+  
+  <!-- Question marks with glow -->
+  <text x="170" y="490" font-size="52" fill="#ff6b6b" opacity="0.8" filter="url(#glow)">?</text>
+  <text x="320" y="510" font-size="52" fill="#ff6b6b" opacity="0.8" filter="url(#glow)">?</text>
+  <text x="430" y="470" font-size="52" fill="#ff6b6b" opacity="0.8" filter="url(#glow)">?</text>
+  
+  <text x="300" y="540" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" fill="#ffffff" font-weight="bold" font-style="italic">
+    "Where is that photo from 2020?!" 😫
+  </text>
+  
+  <!-- AFTER Section -->
+  <g filter="url(#shadow)">
+    <rect x="650" y="100" width="500" height="450" rx="20" fill="rgba(255, 255, 255, 0.15)" stroke="rgba(255, 255, 255, 0.3)" stroke-width="2"/>
+  </g>
+  
+  <text x="900" y="145" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#6bcf7f">
+    ✨ AFTER
+  </text>
+  <text x="900" y="175" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ffd93d">
+    Perfectly Organized
+  </text>
+  
+  <!-- Organized Structure (After) -->
+  <!-- Photo Folder -->
+  <g transform="translate(700, 200)" filter="url(#shadow)">
+    <rect width="150" height="85" rx="12" fill="#4ecdc4" stroke="#45b7af" stroke-width="2"/>
+    <text x="20" y="38" font-size="36">📸</text>
+    <text x="75" y="32" font-size="17" font-weight="bold" fill="#ffffff">Photo</text>
+    <text x="75" y="52" font-size="12" fill="#ffffff">📅 2024/01/</text>
+    <text x="75" y="68" font-size="12" fill="#ffffff">📅 2023/12/</text>
+  </g>
+  
+  <!-- Video Folder -->
+  <g transform="translate(880, 200)" filter="url(#shadow)">
+    <rect width="150" height="85" rx="12" fill="#ff6b6b" stroke="#ee5a5a" stroke-width="2"/>
+    <text x="20" y="38" font-size="36">🎬</text>
+    <text x="75" y="32" font-size="17" font-weight="bold" fill="#ffffff">Video</text>
+    <text x="75" y="52" font-size="12" fill="#ffffff">📅 2024/06/</text>
+    <text x="75" y="68" font-size="12" fill="#ffffff">📅 2023/11/</text>
+  </g>
+  
+  <!-- Document Folder -->
+  <g transform="translate(700, 310)" filter="url(#shadow)">
+    <rect width="150" height="85" rx="12" fill="#95e1d3" stroke="#7dcdc1" stroke-width="2"/>
+    <text x="20" y="38" font-size="36">📄</text>
+    <text x="75" y="32" font-size="17" font-weight="bold" fill="#ffffff">Document</text>
+    <text x="75" y="52" font-size="12" fill="#ffffff">📅 2025/02/</text>
+    <text x="75" y="68" font-size="12" fill="#ffffff">📅 2024/08/</text>
+  </g>
+  
+  <!-- Audio Folder -->
+  <g transform="translate(880, 310)" filter="url(#shadow)">
+    <rect width="150" height="85" rx="12" fill="#a8daff" stroke="#79c7ff" stroke-width="2"/>
+    <text x="20" y="38" font-size="36">🎵</text>
+    <text x="75" y="32" font-size="17" font-weight="bold" fill="#ffffff">Audio</text>
+    <text x="75" y="52" font-size="12" fill="#ffffff">📅 2024/03/</text>
+    <text x="75" y="68" font-size="12" fill="#ffffff">📅 2023/09/</text>
+  </g>
+  
+  <!-- Check marks with glow -->
+  <text x="740" y="445" font-size="56" fill="#6bcf7f" filter="url(#glow)">✓</text>
+  <text x="880" y="445" font-size="56" fill="#6bcf7f" filter="url(#glow)">✓</text>
+  <text x="1020" y="445" font-size="56" fill="#6bcf7f" filter="url(#glow)">✓</text>
+  
+  <!-- Docker + Python badge -->
+  <g transform="translate(760, 470)" filter="url(#shadow)">
+    <rect width="240" height="55" rx="28" fill="#ffffff" stroke="#ffd93d" stroke-width="3"/>
+    <text x="120" y="25" font-size="18" font-weight="bold" text-anchor="middle" fill="#667eea">🐳 Docker + Python</text>
+    <text x="120" y="43" font-size="13" text-anchor="middle" fill="#764ba2" font-weight="600">Automated in Minutes</text>
+  </g>
+  
+  <text x="900" y="540" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" fill="#ffffff" font-weight="bold" font-style="italic">
+    "Found instantly! 🎉✨"
+  </text>
+  
+  <!-- Arrow in the middle with glow -->
+  <g transform="translate(570, 325)" filter="url(#glow)">
+    <line x1="0" y1="0" x2="50" y2="0" stroke="#ffd93d" stroke-width="5"/>
+    <polygon points="50,-10 70,0 50,10" fill="#ffd93d"/>
+  </g>
+</svg>

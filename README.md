@@ -10,6 +10,9 @@
 
 </div>
 
+![Data Analyst Associate Certification](./public/hed.png)
+
+
 ---
 
 ## ✨ What It Does
